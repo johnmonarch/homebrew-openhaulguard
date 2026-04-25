@@ -11,7 +11,7 @@ class Ohg < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/johnmonarch/OpenCarrier/releases/download/v0.1.0/ohg_0.1.0_darwin_amd64.tar.gz"
-      sha256 "f5e97ff116a05e1a4f11d23cda1dfa005830c53353d28da55271805c0134f276"
+      sha256 "8a276757bc88c86802ab8e561ccaccb75cbc55e714638c93fd4c0e41e863d871"
 
       define_method(:install) do
         bin.install "ohg"
@@ -19,7 +19,7 @@ class Ohg < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/johnmonarch/OpenCarrier/releases/download/v0.1.0/ohg_0.1.0_darwin_arm64.tar.gz"
-      sha256 "7173bbf25da7d53828dee3cd696720f5f9962e33fab08feee2f7965b10d56302"
+      sha256 "77a174400018f1b7369945227da119b192986e08070822281d669ad608830086"
 
       define_method(:install) do
         bin.install "ohg"
@@ -30,14 +30,14 @@ class Ohg < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/johnmonarch/OpenCarrier/releases/download/v0.1.0/ohg_0.1.0_linux_amd64.tar.gz"
-      sha256 "725e21bf2fc81b7192b837ec0482aa33dd5a0d4b9e243d18a12406f943ca74b5"
+      sha256 "af9cdde65135b31328bd8cfa62e708f2cdf443667fafba6cf003316b6c5a45b8"
       define_method(:install) do
         bin.install "ohg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/johnmonarch/OpenCarrier/releases/download/v0.1.0/ohg_0.1.0_linux_arm64.tar.gz"
-      sha256 "dad8f28fa2cac746aaa78de94598433db25b55199c66e15e89105603f53f90da"
+      sha256 "b5c33ba6fb914e4fc9927d573bd3e0611595a6fca1a7ac05d3ebfa558301ac70"
       define_method(:install) do
         bin.install "ohg"
       end
