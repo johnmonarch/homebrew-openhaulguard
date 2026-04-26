@@ -5,21 +5,21 @@
 class Ohg < Formula
   desc "Local-first carrier verification and freight risk review CLI."
   homepage "https://github.com/johnmonarch/OpenHaul"
-  version "0.1.0"
+  version "0.2.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/johnmonarch/OpenHaul/releases/download/v0.1.0/ohg_0.1.0_darwin_amd64.tar.gz"
-      sha256 "8a276757bc88c86802ab8e561ccaccb75cbc55e714638c93fd4c0e41e863d871"
+      url "https://github.com/johnmonarch/OpenHaul/releases/download/v0.2.0/ohg_0.2.0_darwin_amd64.tar.gz"
+      sha256 "8ad3d952bbcfcf08e49f86bda1572d4aade61ec28e769c9ebda8974480e97bbe"
 
       define_method(:install) do
         bin.install "ohg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/johnmonarch/OpenHaul/releases/download/v0.1.0/ohg_0.1.0_darwin_arm64.tar.gz"
-      sha256 "77a174400018f1b7369945227da119b192986e08070822281d669ad608830086"
+      url "https://github.com/johnmonarch/OpenHaul/releases/download/v0.2.0/ohg_0.2.0_darwin_arm64.tar.gz"
+      sha256 "55bab36e21cbc7c8e361ac72375ad0e673b4dff1baa53985677196bf87ecd433"
 
       define_method(:install) do
         bin.install "ohg"
@@ -29,15 +29,15 @@ class Ohg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/johnmonarch/OpenHaul/releases/download/v0.1.0/ohg_0.1.0_linux_amd64.tar.gz"
-      sha256 "af9cdde65135b31328bd8cfa62e708f2cdf443667fafba6cf003316b6c5a45b8"
+      url "https://github.com/johnmonarch/OpenHaul/releases/download/v0.2.0/ohg_0.2.0_linux_amd64.tar.gz"
+      sha256 "21b8884617ebb3e37249198d9e62d6e507305ee84dc1eb93deac1e5f3d15cc7e"
       define_method(:install) do
         bin.install "ohg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/johnmonarch/OpenHaul/releases/download/v0.1.0/ohg_0.1.0_linux_arm64.tar.gz"
-      sha256 "b5c33ba6fb914e4fc9927d573bd3e0611595a6fca1a7ac05d3ebfa558301ac70"
+      url "https://github.com/johnmonarch/OpenHaul/releases/download/v0.2.0/ohg_0.2.0_linux_arm64.tar.gz"
+      sha256 "b605ce2f17d43fec7d2c4584dff3d8537bc18cfed172a2112f8a0502136e84b5"
       define_method(:install) do
         bin.install "ohg"
       end
